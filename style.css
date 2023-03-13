@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  padding-bottom: 50px;
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: dimgrey;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+#gameboard {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 15px solid;
+  box-sizing: border-box;
+  color: darkgreen;
+}
+
+.cross {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.cross:before,
+.cross:after {
+  content: "";
+  position: absolute;
+  background-color: red;
+}
+
+.cross:before {
+  left: 50%;
+  width: 30%;
+  margin-left: -15%;
+  height: 100%;
+}
+
+.cross::after {
+  top: 50%;
+  height: 30%;
+  margin-top: -15%;
+  width: 100%;
+}
+
+.reset {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.all-players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+}

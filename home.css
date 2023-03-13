@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  padding: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: dimgray;
+  font-size: 100px;
+  border-bottom: 10px groove;
+}
+
+p {
+  padding: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.startBtn {
+  font-size: 50px;
+  margin: 60px;
+}
